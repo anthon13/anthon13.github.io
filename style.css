@@ -6,7 +6,7 @@ body, h1 {
 }
 
 body {
-  background-image: url(images/Hawaii.jpg);
+  background-image: url(Hawaii.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: #555555; 
@@ -81,7 +81,7 @@ nav a.active {
 
 #homehero {
   height: 700px;
-  background-image: url(images/AnthonyVo.PNG);
+  background-image: url(AnthonyVo.PNG);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative; 
@@ -90,7 +90,7 @@ nav a.active {
 
 #educationhero {
   height: 700px;
-  background-image: url(images/ASU.jpg);
+  background-image: url(ASU.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
@@ -99,7 +99,7 @@ nav a.active {
 
 #experiencehero {
   height: 900px;
-  background-image: url(images/GamingPC.png);
+  background-image: url(GamingPC.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative; 
@@ -108,7 +108,7 @@ nav a.active {
 
 #rhero {
   height: 500px;
-  background-image: url(images/Hawaii.jpg);
+  background-image: url(Hawaii.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative; 
@@ -117,7 +117,7 @@ nav a.active {
 
 #contacthero {
   height: 900px;
-  background-image: url(images/Anthony-HeroImage.jpg);
+  background-image: url(Anthony-HeroImage.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative; 
