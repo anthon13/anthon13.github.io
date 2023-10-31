@@ -1,0 +1,281 @@
+* { box-sizing: border-box; }
+
+body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(images/Hawaii.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #555555; 
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#wrapper {         
+	background-image: linear-gradient(to bottom, #FFFFFF, #AED6F1);
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}  
+
+header {
+  background-color: #85929E;
+  color: #ffffff;
+  text-align: center;
+}
+
+header h1 {
+  padding-top: 10px;
+}
+
+.logo {
+  display: none;
+}
+
+nav {
+  height: 50px; 
+  background-color: white;
+  text-align: center;
+} 
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px; 
+}
+
+nav li a {
+  display: inline-block;
+  color: #34495E;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:link {
+  color: lightgray;
+}
+
+nav a:visited {
+  color: #85929E;
+}
+
+nav a:hover {
+  color: #AED6F1;
+}
+
+nav a.active {
+  background-color:#85929E;
+  border-radius: 3px;
+  color:blanchedalmond;
+  margin-left: 16px;
+}
+
+#homehero {
+  height: 700px;
+  background-image: url(images/AnthonyVo.PNG);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative; 
+  object-fit: fill;
+}
+
+#educationhero {
+  height: 700px;
+  background-image: url(images/ASU.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  object-fit: fill;
+}
+
+#experiencehero {
+  height: 900px;
+  background-image: url(images/GamingPC.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative; 
+  object-fit: fill;
+}
+
+#rhero {
+  height: 500px;
+  background-image: url(images/Hawaii.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative; 
+  object-fit: fill;
+}
+
+#contacthero {
+  height: 900px;
+  background-image: url(images/Anthony-HeroImage.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative; 
+  object-fit: fill;
+}
+
+.imgcontainer {
+  position: relative;
+  text-align: center;
+  color: white; 
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.twocontainer {
+  float: left;
+  width: 50%; 
+  padding: 10px; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+section {
+  padding: 2rem;
+}
+
+/* 9/19 */
+section.evenrow {
+  color: white;
+  background-color: #5D6D7E; 
+}
+
+section.oddrow {
+  color: white;
+  background-color:#2C3E50; 
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+tr:nth-of-type(odd) {
+  background-color: #566573;
+}
+
+object {
+  height: 700px;
+  width: 80%;
+}
+
+th, td {
+  padding: 10px;
+}
+
+th {
+  color: lightgray;
+}
+
+form {
+  margin-right:auto;
+  margin-left:auto;
+  max-width: 50em;
+  width: 80%;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 12em 1fr;
+}
+
+
+.button-container {
+  grid-column: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+  width: 35%; 
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #85929E;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0 0 10px 0;
+}
+
+.socialMediaLinks a {
+  font-size: 20px;
+  margin: 0 10px 0 0;
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 1025px) {
+
+  .logo {
+    display: block;
+    float: left; 
+    margin-left: 10px; 
+    width: 100px;
+    height: 60px;
+    object-fit: fill;
+  }
+  
+  #threecontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  section section{
+      margin-left: 1em;
+      margin-right: 1em;
+  }
+  nav {
+    text-align: left;
+    padding-top: 20px;
+  }
+  
+  .hero {grid-area: hero; }
+  header {grid-area: header;}
+  nav {grid-area: nav; }
+  main {grid-area: main; }
+  footer {grid-area: footer; }
+
+  #wrapper {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      grid-template-areas:
+        "header header"
+        "nav hero"
+        "nav main"
+        "footer footer";
+  }
+}
